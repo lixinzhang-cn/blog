@@ -9,7 +9,7 @@ export default defineConfig({
   base:'/blog/',
   title: "My Awesome Project",
   description: "A VitePress Site",
-  lastUpdated: true,  // 最后更新时间
+  lastUpdated: '上次更新',  // 最后更新时间 string | boolean
   // 代码块启用行号
   markdown: {
     lineNumbers: true
