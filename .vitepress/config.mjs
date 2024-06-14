@@ -9,7 +9,9 @@ export default defineConfig({
   base:'/blog/',
   title: "My Awesome Project",
   description: "A VitePress Site",
-  lastUpdated: '上次更新', // string | boolean
+  lastUpdated: true,
+  lastUpdatedText: "最后更新",
+  // lastUpdated: '上次更新', // string | boolean
   // 代码块启用行号
   markdown: {
     lineNumbers: true
@@ -31,6 +33,7 @@ export default defineConfig({
       pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
       text: '在GitHub上编辑'
     },
+    
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
