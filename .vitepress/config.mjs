@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
+
 import sidebar from './sidebar.mjs'
 import nav from './nav.mjs'
 
@@ -16,10 +18,21 @@ export default defineConfig({
   markdown: {
     lineNumbers: true
   },
+
+  vite: {
+    plugins: [
+      // https://vitepress-auto-sidebar-plugin.netlify.app/
+      AutoSidebarPlugin({
+        sort: (a, b) => a.text.localeCompare(b.text)
+      })
+    ],
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav,
-    sidebar: sidebar,
+    // sidebar: sidebar,
+
     // outlineTitle: "页面导航", // 右侧边栏配置
     // 右侧边栏层级及标题配置
     outline: {
