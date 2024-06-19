@@ -33,7 +33,7 @@ const addCount = ()=> count.value++
 1. 代码量变少
 2. 分散式维护变成集中式维护
 ### 2. Vue3更多的优势
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678178235504-912ad469-1a9a-469d-a8dc-411a55963329.png#averageHue=%23f4dcdc&clientId=ud0819acc-4d21-4&from=paste&height=516&id=u779f92e3&name=image.png&originHeight=1032&originWidth=2372&originalType=binary&ratio=2&rotation=0&showTitle=false&size=301467&status=done&style=none&taskId=u2dca71ca-84b3-48aa-8f52-f746797fcd1&title=&width=1186)
+![image.png](./../public/image%20(8).png)
 
 
 ## 使用create-vue搭建Vue3项目
@@ -41,7 +41,7 @@ const addCount = ()=> count.value++
 > create-vue是Vue官方新的脚手架工具，底层切换到了 vite （下一代前端工具链），为开发提供极速响应
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678178479590-ac164009-4a72-4448-85bf-67dc13f3d0c4.png#averageHue=%23feefbe&clientId=ud0819acc-4d21-4&from=paste&height=402&id=u05a93b8e&name=image.png&originHeight=804&originWidth=1606&originalType=binary&ratio=2&rotation=0&showTitle=false&size=221602&status=done&style=none&taskId=uf227924e-280a-4766-add6-d34b9331b0d&title=&width=803)
+![image.png](./../public/image%20(9).png)
 
 ### 2. 使用create-vue创建项目
 > 前置条件 - 已安装16.0或更高版本的Node.js
@@ -51,9 +51,9 @@ const addCount = ()=> count.value++
 npm init vue@latest
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678178685782-71a3b311-423d-4528-aae9-85e6068db452.png#averageHue=%23333332&clientId=ud0819acc-4d21-4&from=paste&height=477&id=u807a99d3&name=image.png&originHeight=954&originWidth=1364&originalType=binary&ratio=2&rotation=0&showTitle=false&size=488023&status=done&style=none&taskId=u4d75c82e-6b19-48a6-a9df-0ee44d9e92c&title=&width=682)
+![image.png](./../public/image%20(10).png)
 # 熟悉项目和关键文件
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678178749511-f4a42cbf-987b-46a7-9a01-9cd4f00a5fcf.png#averageHue=%23f1f1ef&clientId=ud0819acc-4d21-4&from=paste&height=541&id=u1ac1e797&name=image.png&originHeight=1082&originWidth=2256&originalType=binary&ratio=2&rotation=0&showTitle=false&size=595592&status=done&style=none&taskId=u38211dc7-742f-4d49-84f3-39a837eb254&title=&width=1128)
+![image.png](./../public/image%20(11).png)
 
 ## 组合式API - setup选项
 ### 1. setup选项的写法和执行时机
@@ -73,7 +73,7 @@ npm init vue@latest
 执行时机
 > 在beforeCreate钩子之前执行
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678179048672-603fdc19-4a41-4542-af55-702776625358.png#averageHue=%23fefefd&clientId=ud0819acc-4d21-4&from=paste&height=453&id=uf8697cce&name=image.png&originHeight=906&originWidth=1248&originalType=binary&ratio=2&rotation=0&showTitle=false&size=182575&status=done&style=none&taskId=u2cd1d681-f573-4456-9ddb-d2ab1f41805&title=&width=624)
+![image.png](./../public/image%20(12).png)
 
 ### 2. setup中写代码的特点
 > 在setup函数中写的数据和方法需要在末尾以对象的方式return，才能给模版使用
@@ -260,7 +260,7 @@ const filterList = computed(item=>item > 2)
 ```
 ## 组合式API - 生命周期函数
 ### 1. 选项式对比组合式
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678183720098-4d40e806-bc0d-4c38-bcbe-9aed440f6b23.png#averageHue=%23cdd7e8&clientId=ud0819acc-4d21-4&from=paste&height=554&id=uc176ffaf&name=image.png&originHeight=1108&originWidth=2190&originalType=binary&ratio=2&rotation=0&showTitle=false&size=261737&status=done&style=none&taskId=u64291cff-e1f5-4709-ba14-700b20d39e8&title=&width=1095)
+![image.png](./../public/image%20(13).png)
 ### 2. 生命周期函数基本使用
 > 1. 导入生命周期函数
 > 2. 执行生命周期函数，传入回调
@@ -293,14 +293,14 @@ onMounted(()=>{
 > 1. 父组件中给子组件绑定属性
 > 2. 子组件内部通过props选项接收数据
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678184258336-94b25c26-3150-456b-8981-64017ce7b021.png#averageHue=%2323282f&clientId=ud0819acc-4d21-4&from=paste&height=337&id=u6f845ad3&name=image.png&originHeight=674&originWidth=2402&originalType=binary&ratio=2&rotation=0&showTitle=false&size=416739&status=done&style=none&taskId=ubb5c9d64-f3d7-4a1b-bc05-9bf2af1e24d&title=&width=1201)
+![image.png](./../public/image%20(14).png)
 
 ### 2. 子传父
 > 基本思想
 > 1. 父组件中给子组件标签通过@绑定事件
 > 2. 子组件内部通过 emit 方法触发事件
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678184380538-99cfc459-3e2e-4d2e-9162-350ef5f97ec6.png#averageHue=%23242830&clientId=ud0819acc-4d21-4&from=paste&height=388&id=u4588c125&name=image.png&originHeight=776&originWidth=2284&originalType=binary&ratio=2&rotation=0&showTitle=false&size=573924&status=done&style=none&taskId=ue5c30a58-7910-4a5b-8325-7e572c6348e&title=&width=1142)
+![image.png](./../public/image%20(15).png)
 
 ## 组合式API - 模版引用
 > 概念：通过 ref标识 获取真实的 dom对象或者组件实例对象
@@ -310,18 +310,18 @@ onMounted(()=>{
 > 1. 调用`ref`函数生成一个`ref`对象
 > 2. 通过`ref`标识绑定`ref`对象到标签
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678184653565-b85c6f60-1089-4ad6-bed7-bbf781863db9.png#averageHue=%2324282f&clientId=ud0819acc-4d21-4&from=paste&height=442&id=u45efd4ee&name=image.png&originHeight=884&originWidth=1092&originalType=binary&ratio=2&rotation=0&showTitle=false&size=287093&status=done&style=none&taskId=u8dba8092-8819-44b3-a2ef-769257a611a&title=&width=546)
+![image.png](./../public/image%20(16).png)
 
 ### 2. `defineExpose`
 > 默认情况下在 `<script setup>`语法糖下组件内部的属性和方法是不开放给父组件访问的，可以通过defineExpose编译宏指定哪些属性和方法容许访问
 > 说明：指定testMessage属性可以被访问到
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678184774906-7486a911-d18c-42e8-9aa7-fe2caa35e104.png#averageHue=%23ecf2ee&clientId=ud0819acc-4d21-4&from=paste&height=292&id=u0d5c6487&name=image.png&originHeight=584&originWidth=2512&originalType=binary&ratio=2&rotation=0&showTitle=false&size=239701&status=done&style=none&taskId=ub87fd095-cc3e-4e44-92f6-7c9643f831a&title=&width=1256)
+![image.png](./../public/image%20(17).png)
 ## 组合式API - provide和inject
 ### 1. 作用和场景
 > 顶层组件向任意的底层组件传递数据和方法，实现跨层组件通信
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678185158603-5ae6c0e5-7baa-4de9-8a54-d1864d6c45d3.png#averageHue=%23fdf6ef&clientId=ud0819acc-4d21-4&from=paste&height=596&id=ua50e576b&name=image.png&originHeight=1192&originWidth=2558&originalType=binary&ratio=2&rotation=0&showTitle=false&size=414782&status=done&style=none&taskId=u0792870d-aa73-4c03-8342-aaa56e5d8fb&title=&width=1279)
+![image.png](./../public/image%20(18).png)
 
 ### 2. 跨层传递普通数据
 > 实现步骤
@@ -329,20 +329,20 @@ onMounted(()=>{
 > 2. 底层组件通过 `inject` 函数提供数据
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678185321144-61e96ddf-f56c-4d57-83bc-c3c6899f72b2.png#averageHue=%23e4efe5&clientId=ud0819acc-4d21-4&from=paste&height=435&id=u9eb7aecf&name=image.png&originHeight=870&originWidth=1736&originalType=binary&ratio=2&rotation=0&showTitle=false&size=242848&status=done&style=none&taskId=u3d40b793-c4bc-44e7-83d9-4df25e56a7d&title=&width=868)
+![image.png](./../public/image%20(19).png)
 
 ### 3. 跨层传递响应式数据
 > 在调用provide函数时，第二个参数设置为ref对象
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678185454566-b866e7f4-fa23-4c44-a199-8ca19b7d438e.png#averageHue=%2381b27d&clientId=ud0819acc-4d21-4&from=paste&height=473&id=u4efc7283&name=image.png&originHeight=946&originWidth=1732&originalType=binary&ratio=2&rotation=0&showTitle=false&size=237788&status=done&style=none&taskId=uf829094c-f2f8-4ca1-a8ed-c20f9eb79e4&title=&width=866)
+![image.png](./../public/image%20(20).png)
 
 ### 4. 跨层传递方法
 > 顶层组件可以向底层组件传递方法，底层组件调用方法修改顶层组件的数据
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678185556536-669d0753-2dda-41ae-a750-b0e32f837d42.png#averageHue=%2394b88e&clientId=ud0819acc-4d21-4&from=paste&height=391&id=u449ca48f&name=image.png&originHeight=782&originWidth=2556&originalType=binary&ratio=2&rotation=0&showTitle=false&size=242321&status=done&style=none&taskId=u80c0e832-0efd-4886-9a15-05ebfb4c772&title=&width=1278)
+![image.png](./../public/111.png)
 
 ## 综合案例
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1678185631376-9e6cd19a-0788-42ab-90d4-1103fdbb80db.png#averageHue=%23fefefe&clientId=ud0819acc-4d21-4&from=paste&height=544&id=u35ff8500&name=image.png&originHeight=1088&originWidth=2302&originalType=binary&ratio=2&rotation=0&showTitle=false&size=455015&status=done&style=none&taskId=u6338b36f-65be-420e-af70-914bf97813d&title=&width=1151)
+![image.png](./../public/image%20(21).png)
 ## 1. 项目地址
 ```bash
 git clone  http://git.itcast.cn/heimaqianduan/vue3-basic-project.git
