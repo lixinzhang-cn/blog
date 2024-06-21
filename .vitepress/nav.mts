@@ -30,7 +30,7 @@ export default [
         },
         {
           // 该部分的标题
-          text: 'Layui',
+          text: 'Flask',
           items: [
             { text: 'layui 实现注册功能', link: '/layui/01.register-case' },
             { text: 'layui 实现学员信息案例', link: '/layui/02.table-case' }
